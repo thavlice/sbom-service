@@ -12,6 +12,10 @@ INSERT INTO generations (id, request_id, status) VALUES
   ('dev-gen-001', 'dev-req-124', 'FINISHED'),
   ('dev-gen-002', 'dev-req-126', 'FINISHED');
 
+INSERT INTO generation_sbom_urls (generation_id, url) VALUES
+  ('dev-gen-001', 'https://example.com/sbom/dev-gen-001'),
+  ('dev-gen-001', 'https://example.com/sbom/dev-gen-002');
+
 
 INSERT INTO enhancements (id, generation_id, status, index) VALUES
   ('dev-enh-001', 'dev-gen-001', 'FINISHED', 1),
